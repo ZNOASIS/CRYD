@@ -22,11 +22,11 @@ if __name__ == "__main__":
                         help='Directory to save the fused scores in a pickle file')
 
     arg = parser.parse_args()
-    label = np.load('autodl-tmp/competition/data/test_A_label.npy')
+    #label = np.load('autodl-tmp/competition/data/test_A_label.npy')
 
     fused_scores = {}
 
-
+    #请填写测试后文件的具体地址，由于涉及到测试的具体日期，顺便把文件路径中的空格取消了，可能会报错。
     with open('autodl-tmp/DeGCN/work_dir_test/20240923112823/epoch1_test_score.pkl', 'rb') as r1:
         r1 = list(pickle.load(r1).items())
     with open('autodl-tmp/DeGCN/work_dir_test_bone/20240923210428/epoch1_test_score.pkl', 'rb') as r2:
@@ -52,17 +52,17 @@ if __name__ == "__main__":
             _, r44 = r4[i]
             r = r11 * arg.alpha[0] + r22 * arg.alpha[1] + r33 * arg.alpha[2] + r44 * arg.alpha[3]
             fused_scores[i] = r  # Append the fused score
-            rank_5 = r.argsort()[-5:]
-            right_num_5 += int(int(l) in rank_5)
-            r = np.argmax(r)
-            right_num += int(r == int(l))
-            total_num += 1
-        acc = right_num / total_num
-        acc5 = right_num_5 / total_num
+            #rank_5 = r.argsort()[-5:]
+            #right_num_5 += int(int(l) in rank_5)
+            #r = np.argmax(r)
+            #right_num += int(r == int(l))
+            #total_num += 1
+        #acc = right_num / total_num
+        #acc5 = right_num_5 / total_num
 
 
-    print('Top1 Acc: {:.4f}%'.format(acc * 100))
-    print('Top5 Acc: {:.4f}%'.format(acc5 * 100))
+    #print('Top1 Acc: {:.4f}%'.format(acc * 100))
+    #print('Top5 Acc: {:.4f}%'.format(acc5 * 100))
 
     # Save the fused scores to a pickle file
     if arg.output_dir is not None:
