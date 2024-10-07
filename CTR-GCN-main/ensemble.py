@@ -22,7 +22,7 @@ if __name__ == "__main__":
                         help='Directory to save the fused scores in a pickle file')
 
     arg = parser.parse_args()
-    label = np.load('autodl-tmp/competition/data/test_A_label.npy')
+    #label = np.load('autodl-tmp/competition/data/test_A_label.npy')
 
     fused_scores = {}
 
