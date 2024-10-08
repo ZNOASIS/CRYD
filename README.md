@@ -47,3 +47,4 @@ python CRYD-main/CTR-GCN-main/main.py --config CRYD-main/CTR-GCN-main/config/ntu
 python CRYD-main/CTR-GCN-main/main.py --config CRYD-main/CTR-GCN-main/config/nturgbd-cross-subject/joint_motion.yaml --work-dir CRYD-main/CTR-GCN-main/work_dir_test_joint_motion --phase test --save-score True --weights CRYD-main/CTR-GCN-main/weights/joint_motion/runs-84-21504.pt  --device 0
 * CTR-GCN_bone_motion:
 python CRYD-main/CTR-GCN-main/main.py --config CRYD-main/CTR-GCN-main/config/nturgbd-cross-subject/bone_motion.yaml --work-dir CRYD-main/CTR-GCN-main/work_dir_test_bone_motion --phase test --save-score True --weights CRYD-main/CTR-GCN-main/weights/bone_motion/runs-95-24320.pt  --device 0
+## 权重融合
