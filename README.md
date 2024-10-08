@@ -53,6 +53,6 @@ python CRYD-main/HDBN/ICMEW2024-Track10-main/ensemble.py  --output-dir CRYD-main
 python CRYD-main/DeGCN/DeGCN_pytorch-main/ensemble.py --output-dir CRYD-main/result2<br>
 python CRYD-main/SkateFormer-main/ensemble.py  --output-dir CRYD-main/result3<br>
 * 执行下面命令，融合CTRGCN各自模态，同时融合以上四个模型。<br>
-python CRYD-main/CTR-GCN-main/ensemble.py  --output-dir autodl-tmp/result4
+python CRYD-main/CTR-GCN-main/ensemble.py  --output-dir CRYD-main/result4
 * 执行下面命令，将格式转换为numpy并命名为pred.npy存放在eval.py的同一目录下。<br>
-python CTR-GCN-main/eval.py --pred_path autodl-tmp/result4/fused_scores.pkl
+python CRYD-main/CTR-GCN-main/eval.py --pred_path CRYD-main/result4/fused_scores.pkl
