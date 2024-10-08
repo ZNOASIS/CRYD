@@ -7,8 +7,6 @@
 * former
 * SkateFormer
 * CTR-GCN<br>
-
-**具体指令如下：**
 ### DeGCN
 * DeGCN_joint:  
 python CRYD-main/DeGCN/DeGCN_pytorch-main/main.py --config CRYD-main /DeGCN/DeGCN_pytorch-main/config/joint.yaml --work-dir CRYD-main/DeGCN/work_dir_test --phase test --save-score True --weights CRYD-main/DeGCN/DeGCN_pytorch-main/weights/joint/epoch_67_34371.pt --device 0  
