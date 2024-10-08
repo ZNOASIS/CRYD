@@ -21,22 +21,22 @@ python CRYD/DeGCN/DeGCN_pytorch-main/main.py --config CRYD /DeGCN/DeGCN_pytorch-
 python CRYD-main/HDBN/ICMEW2024-Track10-main/Model_inference/Mix_Former/main.py --config CRYD-main/HDBN/ICMEW2024-Track10-main/Model_inference/Mix_Former/config/mixformer_V2_J.yaml --work-dir CRYD-main/HDBN/ICMEW2024-Track10-main/work_dir_test_former_joint --phase test --save-score True --weights CRYD-main/HDBN/ICMEW2024-Track10-main/weights/joint/runs-62-15872.pt --device 0
 * former_bone
 python CRYD-main/HDBN/ICMEW2024-Track10-main/Model_inference/Mix_Former/main.py --config CRYD-main/HDBN/ICMEW2024-Track10-main/Model_inference/Mix_Former/config/mixformer_V2_B.yaml --work-dir CRYD-main/HDBN/ICMEW2024-Track10-main/work_dir_test_former_bone --phase test --save-score True --weights CRYD-main/HDBN/ICMEW2024-Track10-main/weights/bone/runs-56-7168.pt --device 0
-*former_joint_motion:
+* former_joint_motion:
 python CRYD-main/HDBN/ICMEW2024-Track10-main/Model_inference/Mix_Former/main.py --config CRYD-main/HDBN/ICMEW2024-Track10-main/Model_inference/Mix_Former/config/mixformer_V2_JM.yaml --work-dir CRYD-main/HDBN/ICMEW2024-Track10-main/work_dir_test_former_joint_motion --phase test --save-score True --weights CRYD-main/HDBN/ICMEW2024-Track10-main/weights/joint_motion/runs-57-7296.pt --device 0
-*former_bone_motion:
+* former_bone_motion:
 python CRYD-main/HDBN/ICMEW2024-Track10-main/Model_inference/Mix_Former/main.py --config CRYD-main/HDBN/ICMEW2024-Track10-main/Model_inference/Mix_Former/config/mixformer_V2_BM.yaml --work-dir CRYD-main/HDBN/ICMEW2024-Track10-main/work_dir_test_former_bone_motion --phase test --save-score True --weights CRYD-main/HDBN/ICMEW2024-Track10-main/weights/bone_motion/runs-59-7552.pt --device 0
-*former_k2:
+* former_k2:
 python CRYD-main/HDBN/ICMEW2024-Track10-main/Model_inference/Mix_Former/main.py --config CRYD-main/HDBN/ICMEW2024-Track10-main/Model_inference/Mix_Former/config/mixformer_V2_k2.yaml --work-dir CRYD-main/HDBN/ICMEW2024-Track10-main/work_dir_test_former_k2 --phase test --save-score True --weights CRYD-main/HDBN/ICMEW2024-Track10-main/weights/k2/runs-56-7168.pt --device 0
-*former_k2_motion:
+* former_k2_motion:
 python CRYD-main/HDBN/ICMEW2024-Track10-main/Model_inference/Mix_Former/main.py --config CRYD-main/HDBN/ICMEW2024-Track10-main/Model_inference/Mix_Former/config/mixformer_V2_k2M.yaml --work-dir CRYD-main/HDBN/ICMEW2024-Track10-main/work_dir_test_former_k2_motioin --phase test --save-score True --weights CRYD-main/HDBN/ICMEW2024-Track10-main/weights/k2_motion/runs-59-7552.pt --device 0
 ### SkateFormer
 * SkateFormer_joint：
 python CRYD-main/SkateFormer-main/main.py --config CRYD-main/SkateFormer-main/config/train/ntu_cs/SkateFormer_j.yaml --work-dir CRYD-main/SkateFormer-main/work_dir_test_joint --phase test --save-score True --weights CRYD-main/SkateFormer-main/weights/joint/runs-468-119808.pt --device 0
-*SkateFormer_bone:
+* SkateFormer_bone:
 python CRYD-main/SkateFormer-main/main.py --config CRYD-main/SkateFormer-main/config/train/ntu_cs/SkateFormer_b.yaml --work-dir CRYD-main/SkateFormer-main/work_dir_test_bone --phase test --save-score True --weights CRYD-main/SkateFormer-main/weights/bone/runs-500-256500.pt --device 0
-*SkateFormer_joint_motion:
+* SkateFormer_joint_motion:
 python CRYD-main/SkateFormer-main/main.py --config CRYD-main/SkateFormer-main/config/train/ntu_cs/SkateFormer_jm.yaml --work-dir CRYD-main/SkateFormer-main/work_dir_test_joint_motion --phase test --save-score True --weights CRYD-main/SkateFormer-main/weights/joint_motion/runs-467-119552.pt --device 0
-*SkateFormer_bone_motion:
+* SkateFormer_bone_motion:
 python CRYD-main/SkateFormer-main/main.py --config CRYD-main/SkateFormer-main/config/train/ntu_cs/SkateFormer_bm.yaml --work-dir CRYD-main/SkateFormer-main/work_dir_test_bone_motion --phase test --save-score True --weights CRYD-main/SkateFormer-main/weights/bone_motion/runs-451-115456.pt --device 0
 ### CTR-GCN
 * CTR-GCN_joint:
