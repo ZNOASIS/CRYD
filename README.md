@@ -48,3 +48,11 @@ python CRYD-main/CTR-GCN-main/main.py --config CRYD-main/CTR-GCN-main/config/ntu
 * CTR-GCN_bone_motion:
 python CRYD-main/CTR-GCN-main/main.py --config CRYD-main/CTR-GCN-main/config/nturgbd-cross-subject/bone_motion.yaml --work-dir CRYD-main/CTR-GCN-main/work_dir_test_bone_motion --phase test --save-score True --weights CRYD-main/CTR-GCN-main/weights/bone_motion/runs-95-24320.pt  --device 0
 ## 权重融合
+* 执行下面三个命令，对DeGCN，HDBN，SkateFormer的权重各自融合。
+python CRYD-main/HDBN/ICMEW2024-Track10-main/ensemble.py  --output-dir CRYD-main/result1
+python CRYD-main/DeGCN/DeGCN_pytorch-main/ensemble.py --output-dir CRYD-main/result2
+python CRYD-main/SkateFormer-main/ensemble.py  --output-dir CRYD-main/result3
+* 执行下面命令，融合CTRGCN各自模态，同时融合以上四个模型。
+python CRYD-main/CTR-GCN-main/ensemble.py  --output-dir autodl-tmp/result4
+* 执行下面命令，将格式转换为numpy并命名为pred.npy存放在eval.py的同一目录下。
+python CTR-GCN-main/eval.py --pred_path autodl-tmp/result4/fused_scores.pkl
