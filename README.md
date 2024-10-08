@@ -7,6 +7,7 @@
 * former
 * SkateFormer
 * CTR-GCN<br>
+
 **具体指令如下：**
 ### DeGCN
 * DeGCN_joint:  
