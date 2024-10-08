@@ -2,11 +2,12 @@
 ## 简述
 首先用四个模型分别对测试集进行处理，先运行DeGCN，HDBN，SkateFormer中的ensemble文件，最后再运行CTR-GCN-main中的ensemble文件实现对不同模型和模态的合成。
 ## 用四个模型分别对测试集测试并得到各自的权重
-四个模型分别是：
+**四个模型分别是：**
 * DeGCN
 * former
 * SkateFormer
 * CTR-GCN
+**具体指令如下：**
 ### DeGCN
 * DeGCN_joint:  
 python CRYD-main/DeGCN/DeGCN_pytorch-main/main.py --config CRYD-main /DeGCN/DeGCN_pytorch-main/config/joint.yaml --work-dir CRYD-main/DeGCN/work_dir_test --phase test --save-score True --weights CRYD-main/DeGCN/DeGCN_pytorch-main/weights/joint/epoch_67_34371.pt --device 0  
