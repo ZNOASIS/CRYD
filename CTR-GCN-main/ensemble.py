@@ -35,11 +35,11 @@ if __name__ == "__main__":
         r3 = list(pickle.load(r3).items())
     with open('autodl-tmp/work_dir_test_bone_motion/epoch1_test_score.pkl', 'rb') as r4:
         r4 = list(pickle.load(r4).items())
-    with open('autodl-tmp/result6/fused_scores.pkl', 'rb') as r5:
+    with open('autodl-tmp/result6/fused_scores.pkl', 'rb') as r5: #HDBN
         r5 = list(pickle.load(r5).items())
-    with open('autodl-tmp/result4/fused_scores.pkl', 'rb') as r6:
+    with open('autodl-tmp/result4/fused_scores.pkl', 'rb') as r6: #SkateFormer
         r6 = list(pickle.load(r6).items())
-    with open('autodl-tmp/result2/fused_scores.pkl', 'rb') as r7:
+    with open('autodl-tmp/result2/fused_scores.pkl', 'rb') as r7: #DeGCN
         r7 = list(pickle.load(r7).items())
     right_num = total_num = right_num_5 = 0
     fused_scores = {}
