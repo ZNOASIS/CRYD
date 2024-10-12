@@ -1,6 +1,6 @@
 # CRYD  
 ## 简述
-首先用四个模型分别对测试集进行处理，得到四个模型及其对应多个模态的置信度文件后，运行DeGCN，HDBN，SkateFormer中的ensemble文件，再运行CTR-GCN-main中的ensemble文件实现对不同模型和模态的合成，最后运行CTR-GCN-main中的pred.py文件得到对应格式的最终结果。
+首先用四个模型分别对测试集进行处理，得到四个模型及其对应多个模态的置信度文件后，运行DeGCN，HDBN，SkateFormer中的ensemble文件，再运行CTR-GCN-main中的ensemble文件实现对不同模型和模态的合成，最后运行CTR-GCN-main中的pred.py文件得到对应格式的最终结果。(请修改每个config文件里数据地址)
 ## 用四个模型分别对测试集测试并得到各自的权重
 **四个模型分别是：**
 * DeGCN
