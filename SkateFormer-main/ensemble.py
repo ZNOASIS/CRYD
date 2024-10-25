@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
     if 1:
         #arg.alpha = [2.2, 1.0, 0.7, 0.1, 2.2, 1.4, 0.3, 0.8, 3.4, 12.5]
-        arg.alpha = [1, 1, 0.6, 0.2]
+        arg.alpha = [1.1, 0.9, 0.8, 0.2]
         for i in tqdm(range(len(label))):
             l = label[i]
             _, r11 = r1[i]
