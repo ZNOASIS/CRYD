@@ -12,12 +12,12 @@ train_feeder_args:
   split: train
   data_type: bm
   debug: False
-  window_size: 64
+  window_size: 200
   p_interval: [0.5, 1]
   aug_method: a123489
   intra_p: 0.5
   inter_p: 0.2
-  thres: 64
+  thres: 200
   uniform: True
   partition: False
 
@@ -26,9 +26,9 @@ test_feeder_args:
   label_path: autodl-tmp/competition/data/test_A_label.npy
   split: test
   data_type: bm
-  window_size: 64
+  window_size: 200
   p_interval: [0.95]
-  thres: 64
+  thres: 200
   uniform: True
   partition: False
   debug: False
@@ -45,10 +45,10 @@ model_args:
   head_drop: 0.0
   rel: True
   drop_path: 0.2
-  type_1_size: [ 8, 17 ]
-  type_2_size: [ 8, 2 ]
-  type_3_size: [ 8, 17 ]
-  type_4_size: [ 8, 2 ]
+  type_1_size: [ 5, 17 ]
+  type_2_size: [ 5, 2 ]
+  type_3_size: [ 5, 17 ]
+  type_4_size: [ 5, 2 ]
   mlp_ratio: 4.0
   index_t: True
 
