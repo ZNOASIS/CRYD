@@ -12,12 +12,12 @@ train_feeder_args:
   split: train
   data_type: jm
   debug: False
-  window_size: 64
+  window_size: 128
   p_interval: [0.5, 1]
   aug_method: a123489
   intra_p: 0.5
   inter_p: 0.2
-  thres: 64
+  thres: 128
   uniform: True
   partition: False
 
@@ -26,9 +26,9 @@ test_feeder_args:
   label_path: autodl-tmp/competition/data/test_A_label.npy
   split: test
   data_type: jm
-  window_size: 64
+  window_size: 128
   p_interval: [0.95]
-  thres: 64
+  thres: 128
   uniform: True
   partition: False
   debug: False
