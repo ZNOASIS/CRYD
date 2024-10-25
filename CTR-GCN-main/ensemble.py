@@ -45,7 +45,7 @@ if __name__ == "__main__":
     fused_scores = {}
 
     if 1:
-        arg.alpha = [5, 1, 0.5, 2, 3.2, 16, 0.2]
+        arg.alpha = [0, 0.2, 0.4, 0, 0.3, 19, 0.6]
         for i in tqdm(range(len(label))):
             l = label[i]
             _, r11 = r1[i]
