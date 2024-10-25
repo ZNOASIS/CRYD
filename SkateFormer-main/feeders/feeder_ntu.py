@@ -59,7 +59,7 @@ class Feeder(Dataset):
         valid_frame_num = np.sum(data_numpy.sum(0).sum(-1).sum(-1) != 0)
         num_people = np.sum(data_numpy.sum(0).sum(0).sum(0) != 0)
         if valid_frame_num == 0:
-            return np.zeros((3, 64, 17, 2)), np.zeros((self.window_size,)), label, index
+            return np.zeros((3, self.window_size, 17, 2)), np.zeros((self.window_size,)), label, index
 
         if self.uniform:
             data_numpy, index_t = tools.valid_crop_uniform(data_numpy, valid_frame_num, self.p_interval,
