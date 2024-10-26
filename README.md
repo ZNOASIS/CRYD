@@ -1,7 +1,7 @@
 # CRYD  
 ## 简述
 首先用四个模型分别对测试集进行处理，得到四个模型及其对应多个模态的置信度文件后，运行DeGCN，HDBN，SkateFormer中的ensemble文件，再运行CTR-GCN-main中的ensemble文件实现对不同模型和模态的合成，最后运行CTR-GCN-main中的pred.py文件得到对应格式的最终结果。(请注意修改每个config文件和ensemble文件里地址为你的数据地址)
-search_best为一个寻找最优参数的代码
+search_best为一个寻找最优参数的代码（暂时没用，因为搜出来的效果没有手动配置的好，手动配置的话基于贪心先在三个模型里得到最优，最后在CTR里大融合一次，时间花费不是很高）
 skateformer我们为了更好利用数据，增加windowsize，最大的模态训练可能会需要至少80g显存。
 数据模态处理和数据增强在feeder中完成。
 ## 训练部分
